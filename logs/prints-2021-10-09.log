@@ -1,0 +1,7 @@
+03:51:49.165 [main] INFO  resources.base - navigateion bar displayed
+04:02:30.445 [TestNG-tests-2] INFO  resources.base - Driver is initialsed
+04:02:37.112 [TestNG-tests-2] INFO  resources.base - Navigated to home page
+04:02:37.605 [TestNG-tests-1] INFO  resources.base - test1@gmail.com Log in tried
+04:02:40.137 [TestNG-tests-4] INFO  resources.base - navigateion bar displayed
+04:02:41.916 [TestNG-tests-1] INFO  resources.base - test2@gmail.com Log in tried
+04:13:47.884 [TestNG-tests-2] INFO  resources.base - Driver is initialsed

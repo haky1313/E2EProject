@@ -19,10 +19,13 @@ public class base {
 
 	public WebDriver driver;
 	public Properties prop;
+	public static String projectpath=System.getProperty("user.dir");
 	public WebDriver initializeDriver() throws IOException
 	{
 		prop=new Properties();
-		FileInputStream fis=new FileInputStream("C:\\Users\\haky1\\eclipse-workspace\\E2EProject\\src\\main\\java\\resources\\data.properties");
+		//FileInputStream fis=new FileInputStream("C:\\Users\\haky1\\eclipse-workspace\\E2EProject\\src\\main\\java\\resources\\data.properties");
+		FileInputStream fis=new FileInputStream(projectpath+"\\src\\main\\java\\resources\\data.properties");
+		
 		prop.load(fis);
 		String browserName=prop.getProperty("browser");
 		System.out.println(browserName);

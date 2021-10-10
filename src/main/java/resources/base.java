@@ -27,6 +27,7 @@ public class base {
 		prop=new Properties();
 		//FileInputStream fis=new FileInputStream("C:\\Users\\haky1\\eclipse-workspace\\E2EProject\\src\\main\\java\\resources\\data.properties");
 		FileInputStream fis=new FileInputStream(projectpath+"\\src\\main\\java\\resources\\data.properties");
+		//FileInputStream fis=new FileInputStream(".\\data.properties");
 		
 		prop.load(fis);
 		String browserName=prop.getProperty("browser");

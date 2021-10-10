@@ -21,7 +21,7 @@ public class ValidateNavigationBar extends base {
 	public void initialize() throws IOException
 	{
 		driver=initializeDriver();
-		driver.get(prop.getProperty("url"));
+		driver.get(System.getProperty("url"));
 	}
 	
 	@Test

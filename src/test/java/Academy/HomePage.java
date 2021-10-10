@@ -27,7 +27,7 @@ public class HomePage extends base {
 	public void basePageNavigation(String userName, String password) throws IOException
 	{
 		
-		driver.get(prop.getProperty("url"));
+		driver.get(System.getProperty("url"));
 		LandingPage l = new LandingPage(driver);
 		l.getLogin().click();
 		

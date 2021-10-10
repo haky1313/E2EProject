@@ -15,6 +15,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class base {
 
 	public WebDriver driver;
@@ -32,7 +34,9 @@ public class base {
 		if(browserName.equals("chrome"))
 		{
 			//execute in chrome driver
-			System.setProperty("webdriver.chrome.driver", "C:\\Users\\haky1\\eclipse-workspace\\drivers\\chromedriver.exe");
+			 WebDriverManager.chromedriver().setup();
+			 
+			//System.setProperty("webdriver.chrome.driver", "C:\\Users\\haky1\\eclipse-workspace\\drivers\\chromedriver.exe");
 			driver =new ChromeDriver();
 		}
 		else if(browserName.equals("IE"))

@@ -15,4 +15,26 @@
       </class> <!-- Academy.ValidateTitle -->
     </classes>
   </test> <!-- Validating Title(failed) -->
+  <test thread-count="5" parallel="tests" name="validating Navigation Bar(failed)">
+    <classes>
+      <class name="Academy.ValidateNavigationBar">
+        <methods>
+          <include name="validateAppNavBar"/>
+          <include name="teardown"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- Academy.ValidateNavigationBar -->
+    </classes>
+  </test> <!-- validating Navigation Bar(failed) -->
+  <test thread-count="5" parallel="tests" name="Validating Home PAge(failed)">
+    <classes>
+      <class name="Academy.HomePage">
+        <methods>
+          <include name="initialize"/>
+          <include name="teardown"/>
+          <include name="basePageNavigation" invocation-numbers="0 1"/>
+        </methods>
+      </class> <!-- Academy.HomePage -->
+    </classes>
+  </test> <!-- Validating Home PAge(failed) -->
 </suite> <!-- Failed suite [Suite] -->

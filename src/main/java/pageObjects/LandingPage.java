@@ -10,6 +10,7 @@ public class LandingPage {
 	By signIn=By.cssSelector("a[href*='sign_in']");
 	By title =By.cssSelector(".text-center>h2");
 	By navBar=By.cssSelector(".nav.navbar-nav.navbar-right>li>a");
+	By popup=By.xpath("//button[text()='NO THANKS']");
 	
 	public LandingPage(WebDriver driver2) {
 		// TODO Auto-generated constructor stub
@@ -30,5 +31,13 @@ public class LandingPage {
 	public WebElement getNavigationBar()
 	{
 		return driver.findElement(navBar);
+	}
+	public int getPopUpSize()
+	{
+		return driver.findElements(popup).size();
+	}
+	public WebElement getPopUp()
+	{
+		return driver.findElement(popup);
 	}
 }
